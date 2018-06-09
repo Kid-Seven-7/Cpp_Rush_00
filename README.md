@@ -21,7 +21,7 @@ no Installation required
 ## Usage example
 
 how to use
-``code snippet``
+``code snippet goes here``
 
 ## Release History
 

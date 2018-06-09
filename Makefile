@@ -1,8 +1,8 @@
 NAME = rush00
 
-SRC =
+SRC = srcs/main.cpp srcs/ship.class.cpp
 
-SRCO =
+SRCO = main.o ship.class.o
 
 COMP = clang++
 
@@ -13,8 +13,7 @@ LIB = -lncurses
 all:	$(NAME)
 
 $(NAME):
-	$(COMP) -c $(SRC) $(CPPFLAGS) $(LIB)
-	$(COMP) -o $(NAME) $(SRCO)
+	$(COMP) $(CPPFLAGS) $(SRC) $(LIB)
 
 clean:
 	rm -f $(SRCO)

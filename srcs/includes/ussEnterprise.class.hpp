@@ -15,7 +15,7 @@ class ussEnterprise {
 			bool;
 			char;
 		*/
-		int col, row, size;
+		int col, row, size, score;
 		bool collision;
 		std::string shape;
 
@@ -36,6 +36,7 @@ class ussEnterprise {
 			int GetCol();
 			int GetRow();
 			int GetSize();
+			int GetScore();
 			bool GetCollision();
 			std::string GetShape();
 
@@ -43,6 +44,7 @@ class ussEnterprise {
 			void SetCol(int Col);
 			void SetRow(int Row);
 			void SetSize(int size);
+			void SetScore(int score);
 			void SetCollision(bool collision);
 			void SetShape(std::string shape);
 

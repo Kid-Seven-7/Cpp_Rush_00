@@ -25,6 +25,7 @@
 	//deathStar
 		deathStar *createEnemy();
 		scenery *createAstroid();
+		void    gameOver();
 	//
 
 #endif

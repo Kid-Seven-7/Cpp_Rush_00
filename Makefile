@@ -11,7 +11,8 @@ SRC = $(SRCPATH)main.cpp\
 			$(SRCPATH)gameLogic.cpp\
 			$(SRCPATH)gamePlay.cpp\
 			$(SRCPATH)initGame.cpp\
-			$(SRCPATH)addObjects.cpp
+			$(SRCPATH)addObjects.cpp\
+			$(SRCPATH)gameOver.cpp
 
 COMP = clang++
 

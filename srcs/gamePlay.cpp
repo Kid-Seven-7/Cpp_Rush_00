@@ -10,14 +10,14 @@ void gameplay(ussEnterprise *myShip, deathStar *enemyShip, scenery *astroid, sta
 	myShip->ToString();
 	bullet->ToString();
 	usleep(50000);
-	enemyShip->SetCol(enemyShip->GetCol() - 1);
-
+	enemyShip->SetCol(enemyShip->GetCol() - enemyShip->GetSpeed());
 	astroid->SetCol(astroid->GetCol() - astroid->GetSpeed());
+	move(10, 2);
 	bullet->SetCol(bullet->GetCol() + 5);
 	for (int i = 0; i < 50; ++i)
 		background[i]->SetCol(background[i]->GetCol() - 1);
-	mvprintw(0,0, "L.Skywalker");
-	move(1,0);
+	mvprintw(0,1, "L.Skywalker");
+	move(1,1);
 	printw("Score : %i", myShip->GetScore());
 	refresh();
 }

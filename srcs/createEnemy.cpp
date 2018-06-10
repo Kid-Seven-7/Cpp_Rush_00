@@ -2,13 +2,14 @@
 
 deathStar *createEnemy(){
 
-	deathStar *myShip;
-	myShip = new deathStar;
 	int maxRow, maxCol;
 	getmaxyx(stdscr, maxRow, maxCol);
-	myShip->SetRow(maxRow/2);
-	myShip->SetCol(maxCol);
-
+	int rowPos;
+	srand(time(0));
+	rowPos = rand() % maxRow + 5;
+	deathStar *myShip;
+	myShip = new deathStar(maxCol, rowPos);
+	myShip->SetRow(rowPos);
 	myShip->ToString();
 
 	return (myShip);

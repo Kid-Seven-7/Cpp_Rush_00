@@ -25,6 +25,10 @@ deathStar::deathStar(){
 	this->shape="== ===== ";
 }
 
+deathStar::~deathStar(){
+	delete this;
+}
+
 int deathStar::GetCol(){return this->col;}
 int deathStar::GetRow(){return this->row;}
 int deathStar::GetSize(){return this->size;}
@@ -47,6 +51,8 @@ void deathStar::mvDown(int maxRow){
 void deathStar::mvLeft(){
 	if (this->col > 2)
 		this->SetCol(this->col - 2);
+	if (this->col < 20)
+		this->~deathStar();
 }
 void deathStar::mvRight(int maxCol){
 	if (this->col < maxCol)

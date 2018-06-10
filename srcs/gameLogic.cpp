@@ -3,6 +3,8 @@
 void gameLogic(){
 	ussEnterprise *myShip;
 	myShip = initGame();
+	deathStar *enemyShip;
+	enemyShip = createEnemy();
 	int maxRow, maxCol;
 	getmaxyx(stdscr, maxRow, maxCol);
 
@@ -22,7 +24,7 @@ void gameLogic(){
 		if (userInput == KEY_DOWN)
 				myShip->mvDown(maxRow);
 
-		gameplay(myShip);
+		gameplay(myShip, enemyShip);
 	}
 	endwin();
 }

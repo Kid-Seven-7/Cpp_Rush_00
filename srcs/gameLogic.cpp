@@ -51,8 +51,11 @@ void gameLogic(){
 	enemyShip = createEnemy();
 	scenery *astroid;
 	astroid = createAstroid();
+	stars **background = new stars *[25];
 	int maxRow, maxCol;
 	getmaxyx(stdscr, maxRow, maxCol);
+	for (int i = 0; i < 50; ++i)
+		background[i] = new stars(maxCol, maxRow);
 
 	refresh();
 	while (true){
@@ -77,8 +80,13 @@ void gameLogic(){
 			astroid = createAstroid();
 			astroid->SetSpeed();
 		}
+		for (int i = 0; i < 50; ++i){
+			if ((background[i]->GetCol()) < 0){
+				background[i] = new stars(maxCol, maxRow);
+			}
+		}
 		collisionDetection(myShip, enemyShip, astroid);
-		gameplay(myShip, enemyShip, astroid);
+		gameplay(myShip, enemyShip, astroid, background);
 	}
 	endwin();
 }

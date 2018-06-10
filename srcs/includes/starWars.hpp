@@ -9,10 +9,14 @@
 #include "ussEnterprise.class.hpp"
 #include "deathStar.class.hpp"
 #include "scenery.class.hpp"
+#include "stars.class.hpp"
 
 //Our functions
 	//voids
-		void gameplay(ussEnterprise *myShip, deathStar *enemyShip, scenery *astroid);
+		void gameplay(ussEnterprise *myShip,
+			deathStar *enemyShip,
+			scenery *astroid,
+			stars **background);
 		void gameLogic();
 	//ussEnterprise
 		ussEnterprise *initGame();

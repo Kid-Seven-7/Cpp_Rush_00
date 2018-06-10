@@ -48,3 +48,6 @@ void ussEnterprise::mvRight(int maxCol){
 	if (this->col < maxCol)
 		this->SetCol(this->col + 2);
 }
+
+// ussEnterprise & operator=(ussEnterprise const & rhs){
+// }

@@ -65,7 +65,7 @@ class ussEnterprise {
 
 		//Overloads
 			//Assign Overload
-			// ussEnterprise & operator=(ussEnterprise const & rhs);
+			ussEnterprise & operator=(ussEnterprise const & rhs);
 
 			//ToString Overload
 			void ToString(); //Handy override for displaying info

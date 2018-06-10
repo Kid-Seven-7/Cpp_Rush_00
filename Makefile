@@ -1,8 +1,14 @@
-NAME = rush00
+NAME = starWars
 
-SRC =
+SRCPATH = ./srcs/
 
-SRCO =
+SRC = $(SRCPATH)main.cpp\
+			$(SRCPATH)ussEnterprise.class.cpp\
+			$(SRCPATH)deathStar.class.cpp\
+			$(SRCPATH)gameLogic.cpp\
+			$(SRCPATH)gamePlay.cpp\
+			$(SRCPATH)initGame.cpp\
+			$(SRCPATH)createEnemy.cpp
 
 COMP = clang++
 
@@ -13,8 +19,8 @@ LIB = -lncurses
 all:	$(NAME)
 
 $(NAME):
-	$(COMP) -c $(SRC) $(CPPFLAGS) $(LIB)
-	$(COMP) -o $(NAME) $(SRCO)
+	reset
+	$(COMP) $(SRC) $(CPPFLAGS) $(LIB) -o $(NAME)
 
 clean:
 	rm -f $(SRCO)

@@ -8,19 +8,19 @@ void deathStar::ToString(){
 	init_pair(1, COLOR_RED, COLOR_BLACK);
 	attron(COLOR_PAIR(1));
 	mvprintw(row, col, "=");
-	mvprintw(row, col-1, ">");
+	mvprintw(row, col-1, "<");
 	mvprintw(row+1, col, "=");
 	mvprintw(row+1, col-1, "=");
 	mvprintw(row+1, col-2, "=");
 	mvprintw(row+1, col-3, "<");
 	mvprintw(row+2, col, "=");
-	mvprintw(row+2, col-1, ">");
+	mvprintw(row+2, col-1, "<");
 	attroff(COLOR_PAIR(1));
 }
 
 deathStar::deathStar(){
-	this->col=0;
-	this->row=0;
+	this->col=25;
+	this->row=25;
 	this->size=3;
 	this->shape="== ===== ";
 }
@@ -52,3 +52,6 @@ void deathStar::mvRight(int maxCol){
 	if (this->col < maxCol)
 		this->SetCol(this->col + 2);
 }
+
+// deathStar & operator=(deathStar const & rhs){
+// }

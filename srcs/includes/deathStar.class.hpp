@@ -1,5 +1,5 @@
-#ifndef __USSENTERPRISE_HPP__
-#define __USSENTERPRISE_HPP__
+#ifndef __DEATHSTAR_HPP__
+#define __DEATHSTAR_HPP__
 
 // #include <cstdlib>
 // #include <string>
@@ -65,7 +65,7 @@ class deathStar {
 
 		//Overloads
 			//Assign Overload
-			// deathStar & operator=(deathStar const & rhs);
+			deathStar & operator=(deathStar const & rhs);
 
 			//ToString Overload
 			void ToString(); //Handy override for displaying info

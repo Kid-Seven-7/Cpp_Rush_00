@@ -8,15 +8,17 @@
 #include <unistd.h>
 #include "ussEnterprise.class.hpp"
 #include "deathStar.class.hpp"
+#include "scenery.class.hpp"
 
 //Our functions
 	//voids
-		void gameplay(ussEnterprise *myShip, deathStar *enemyShip);
+		void gameplay(ussEnterprise *myShip, deathStar *enemyShip, scenery *astroid);
 		void gameLogic();
 	//ussEnterprise
 		ussEnterprise *initGame();
 	//deathStar
 		deathStar *createEnemy();
+		scenery *createAstroid();
 	//
 
 #endif

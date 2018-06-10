@@ -5,6 +5,8 @@ void gameLogic(){
 	myShip = initGame();
 	deathStar *enemyShip;
 	enemyShip = createEnemy();
+	scenery *astroid;
+	astroid = createAstroid();
 	int maxRow, maxCol;
 	getmaxyx(stdscr, maxRow, maxCol);
 
@@ -27,7 +29,11 @@ void gameLogic(){
 			enemyShip = createEnemy();
 			enemyShip->SetSpeed();
 		}
-		gameplay(myShip, enemyShip);
+		if ((astroid->GetCol()) < -30){
+			astroid = createAstroid();
+			astroid->SetSpeed();
+		}
+		gameplay(myShip, enemyShip, astroid);
 	}
 	endwin();
 }

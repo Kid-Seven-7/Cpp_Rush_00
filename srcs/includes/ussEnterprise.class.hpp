@@ -1,5 +1,5 @@
-#ifndef __USSENTERPRISE_HPP__
-#define __USSENTERPRISE_HPP__
+#ifndef __USSENTERPRISE_CLASS_HPP__
+#define __USSENTERPRISE_CLASS_HPP__
 
 // #include <cstdlib>
 // #include <string>

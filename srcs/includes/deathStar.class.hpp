@@ -1,5 +1,5 @@
-#ifndef __DEATHSTAR_HPP__
-#define __DEATHSTAR_HPP__
+#ifndef __DEATHSTAR_CLASS_HPP__
+#define __DEATHSTAR_CLASS_HPP__
 
 // #include <cstdlib>
 // #include <string>

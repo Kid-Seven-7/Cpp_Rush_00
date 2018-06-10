@@ -5,15 +5,14 @@ void scenery::ToString(){
 	row = this->GetRow();
 	col = this->GetCol();
 	start_color();
-	init_pair(1, COLOR_RED, COLOR_BLACK);
-	attron(COLOR_PAIR(1));
+	init_pair(2, COLOR_BLUE, COLOR_BLACK);
+	attron(COLOR_PAIR(2));
 	mvprintw(row, col+1, "*");
 	mvprintw(row+1, col, "*");
 	mvprintw(row+1, col+1, "*");
 	mvprintw(row+1, col+2, "*");
 	mvprintw(row+2, col+1, "*");
-	attroff(COLOR_PAIR(1));
-	move(1, 0);
+	attroff(COLOR_PAIR(2));
 }
 
 scenery::scenery(){

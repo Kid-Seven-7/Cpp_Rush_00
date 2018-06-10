@@ -4,9 +4,11 @@ SRCPATH = ./srcs/
 
 SRC = $(SRCPATH)main.cpp\
 			$(SRCPATH)ussEnterprise.class.cpp\
+			$(SRCPATH)deathStar.class.cpp\
 			$(SRCPATH)gameLogic.cpp\
 			$(SRCPATH)gamePlay.cpp\
-			$(SRCPATH)initGame.cpp
+			$(SRCPATH)initGame.cpp\
+			$(SRCPATH)createEnemy.cpp
 
 COMP = clang++
 
@@ -18,7 +20,7 @@ all:	$(NAME)
 
 $(NAME):
 	reset
-	$(COMP) $(SRC) $(CPPFLAGS) $(LIB)
+	$(COMP) $(SRC) $(CPPFLAGS) $(LIB) -o $(NAME)
 
 clean:
 	rm -f $(SRCO)

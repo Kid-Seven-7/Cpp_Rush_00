@@ -15,7 +15,7 @@ class deathStar {
 			bool;
 			char;
 		*/
-		int col, row, size;
+		int col, row, size, speed;
 		std::string shape;
 
 	protected:
@@ -35,12 +35,14 @@ class deathStar {
 			int GetCol();
 			int GetRow();
 			int GetSize();
+			int GetSpeed();
 			std::string GetShape();
 
 		//setters
 			void SetCol(int Col);
 			void SetRow(int Row);
 			void SetSize(int size);
+			void SetSpeed();
 			void SetShape(std::string shape);
 
 		//constructor(s)
@@ -51,7 +53,8 @@ class deathStar {
 			// deathStar(const deathStar &[some_variable_name]);
 
 			//simple
-			deathStar(int col,int row,int size,std::string shape);
+			// deathStar(int col,int row,int size,std::string shape);
+			deathStar(int col,int row);
 
 		//destructor
 			~deathStar();

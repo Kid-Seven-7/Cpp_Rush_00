@@ -6,11 +6,11 @@ SRC = $(SRCPATH)main.cpp\
 			$(SRCPATH)ussEnterprise.class.cpp\
 			$(SRCPATH)deathStar.class.cpp\
 			$(SRCPATH)scenery.class.cpp\
+			$(SRCPATH)stars.class.cpp\
 			$(SRCPATH)gameLogic.cpp\
 			$(SRCPATH)gamePlay.cpp\
 			$(SRCPATH)initGame.cpp\
-			$(SRCPATH)createEnemy.cpp\
-			$(SRCPATH)createAstroid.cpp
+			$(SRCPATH)addObjects.cpp
 
 COMP = clang++
 

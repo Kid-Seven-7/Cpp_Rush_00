@@ -16,6 +16,7 @@ class ussEnterprise {
 			char;
 		*/
 		int col, row, size;
+		bool collision;
 		std::string shape;
 
 	protected:
@@ -35,12 +36,14 @@ class ussEnterprise {
 			int GetCol();
 			int GetRow();
 			int GetSize();
+			bool GetCollision();
 			std::string GetShape();
 
 		//setters
 			void SetCol(int Col);
 			void SetRow(int Row);
 			void SetSize(int size);
+			void SetCollision(bool collision);
 			void SetShape(std::string shape);
 
 		//constructor(s)

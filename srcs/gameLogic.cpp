@@ -1,5 +1,49 @@
 #include "./includes/starWars.hpp"
 
+void collisionDetection(ussEnterprise *myShip, deathStar *enemyShip, scenery *astroid){
+	int row = myShip->GetRow();
+	int col = myShip->GetCol();
+
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 3; j++) {
+			if (((row + i) == enemyShip->GetRow()) && ((col + j) == enemyShip->GetCol())){
+				exit(0);
+			}
+			if (((row + i) == astroid->GetRow()) && ((col + j) == astroid->GetCol())){
+				exit(0);
+			}
+		}
+	}
+
+	row = enemyShip->GetRow();
+	col = enemyShip->GetCol();
+
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 3; j++) {
+			if (((row + i) == myShip->GetRow()) && ((col + j) == myShip->GetCol())){
+				exit(0);
+			}
+			if (((row + i) == astroid->GetRow()) && ((col + j) == astroid->GetCol())){
+				exit(0);
+			}
+		}
+	}
+
+	row = astroid->GetRow();
+	col = astroid->GetCol();
+
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 3; j++) {
+			if (((row + i) == myShip->GetRow()) && ((col + j) == myShip->GetCol())){
+				exit(0);
+			}
+			if (((row + i) == enemyShip->GetRow()) && ((col + j) == enemyShip->GetCol())){
+				exit(0);
+			}
+		}
+	}
+}
+
 void gameLogic(){
 	ussEnterprise *myShip;
 	myShip = initGame();
@@ -33,6 +77,7 @@ void gameLogic(){
 			astroid = createAstroid();
 			astroid->SetSpeed();
 		}
+		collisionDetection(myShip, enemyShip, astroid);
 		gameplay(myShip, enemyShip, astroid);
 	}
 	endwin();

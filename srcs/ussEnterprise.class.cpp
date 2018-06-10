@@ -24,12 +24,14 @@ ussEnterprise::ussEnterprise(){
 int ussEnterprise::GetCol(){return this->col;}
 int ussEnterprise::GetRow(){return this->row;}
 int ussEnterprise::GetSize(){return this->size;}
+bool ussEnterprise::GetCollision(){return this->collision;}
 std::string ussEnterprise::GetShape(){return this->shape;}
 
 //setters
 void ussEnterprise::SetCol(int Col){this->col =Col;}
 void ussEnterprise::SetRow(int Row){this->row =Row;}
 void ussEnterprise::SetSize(int size){this->size =size;}
+void ussEnterprise::SetCollision(bool collision){this->collision = collision;}
 void ussEnterprise::SetShape(std::string shape){this->shape =shape;}
 
 void ussEnterprise::mvUp(){

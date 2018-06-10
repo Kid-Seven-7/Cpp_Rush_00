@@ -23,7 +23,10 @@ void gameLogic(){
 				myShip->mvUp();
 		if (userInput == KEY_DOWN)
 				myShip->mvDown(maxRow);
-
+		if ((enemyShip->GetCol()) < 0){
+			enemyShip = createEnemy();
+			enemyShip->SetSpeed();
+		}
 		gameplay(myShip, enemyShip);
 	}
 	endwin();

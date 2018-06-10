@@ -16,24 +16,44 @@ void deathStar::ToString(){
 	mvprintw(row+2, col, "=");
 	mvprintw(row+2, col-1, "<");
 	attroff(COLOR_PAIR(1));
+	move(1, 0);
 }
 
 deathStar::deathStar(){
-	this->col=25;
-	this->row=25;
-	this->size=3;
-	this->shape="== ===== ";
+	this->col = 25;
+	this->row = 25;
+	this->size = 3;
+	this->shape = "== ===== ";
+}
+
+deathStar::deathStar(int col, int row){
+	this->col = col;
+	this->row = row;
+	this->size = 3;
+	this->shape = "== ===== ";
+}
+
+deathStar::~deathStar(){
+	delete this;
 }
 
 int deathStar::GetCol(){return this->col;}
 int deathStar::GetRow(){return this->row;}
 int deathStar::GetSize(){return this->size;}
+int deathStar::GetSpeed(){return this->size;}
 std::string deathStar::GetShape(){return this->shape;}
 
 //setters
-void deathStar::SetCol(int Col){this->col =Col;}
-void deathStar::SetRow(int Row){this->row =Row;}
-void deathStar::SetSize(int size){this->size =size;}
+void deathStar::SetCol(int Col){this->col = Col;}
+void deathStar::SetRow(int Row){this->row = Row;}
+void deathStar::SetSize(int size){this->size = size;}
+void deathStar::SetSpeed(){
+	int enemySpeed;
+
+	srand(time(0));
+	enemySpeed = rand() % 10 + 1;
+	this->speed = enemySpeed;
+}
 void deathStar::SetShape(std::string shape){this->shape =shape;}
 
 void deathStar::mvUp(){
@@ -47,6 +67,8 @@ void deathStar::mvDown(int maxRow){
 void deathStar::mvLeft(){
 	if (this->col > 2)
 		this->SetCol(this->col - 2);
+	if (this->col < 20)
+		this->~deathStar();
 }
 void deathStar::mvRight(int maxCol){
 	if (this->col < maxCol)

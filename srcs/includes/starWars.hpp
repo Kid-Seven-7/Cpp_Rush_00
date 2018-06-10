@@ -2,6 +2,7 @@
 #define __STARWARS_HPP__
 
 #include <cstdlib>
+#include <ctime>
 #include <string>
 #include <ncurses.h>
 #include <unistd.h>

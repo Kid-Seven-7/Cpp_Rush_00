@@ -5,8 +5,8 @@ void gameplay(ussEnterprise *myShip, deathStar *enemyShip){
 	box(stdscr, 0, '-');
 	myShip->ToString();
 	enemyShip->ToString();
-	usleep(10000);
-	enemyShip->SetCol(enemyShip->GetCol() - 2);
+	usleep(50000);
+	enemyShip->SetCol(enemyShip->GetCol() - enemyShip->GetSpeed());
 	mvprintw(0,0, "L.Skywalker");
 	refresh();
 }

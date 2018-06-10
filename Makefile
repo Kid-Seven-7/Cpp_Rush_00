@@ -1,4 +1,4 @@
-NAME = starWars
+NAME = ft_Retro
 
 SRCPATH = ./srcs/
 

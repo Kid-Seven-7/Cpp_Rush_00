@@ -7,16 +7,16 @@ void deathStar::ToString(){
 	start_color();
 	init_pair(1, COLOR_RED, COLOR_BLACK);
 	attron(COLOR_PAIR(1));
-	mvprintw(row, col, "=");
-	mvprintw(row, col-1, "<");
-	mvprintw(row+1, col, "=");
-	mvprintw(row+1, col-1, "=");
-	mvprintw(row+1, col-2, "=");
-	mvprintw(row+1, col-3, "<");
-	mvprintw(row+2, col, "=");
-	mvprintw(row+2, col-1, "<");
+	mvprintw(row, col, "");
+	mvprintw(row, col+1, "<");
+	mvprintw(row, col+2, "=");
+	mvprintw(row+1, col, "<");
+	mvprintw(row+1, col+1, "=");
+	mvprintw(row+1, col+2, "=");
+	mvprintw(row+2, col, "");
+	mvprintw(row+2, col+1, "<");
+	mvprintw(row+2, col+2, "=");
 	attroff(COLOR_PAIR(1));
-	move(1, 0);
 }
 
 deathStar::deathStar(){
@@ -51,7 +51,7 @@ void deathStar::SetSpeed(){
 	int enemySpeed;
 
 	srand(time(0));
-	enemySpeed = rand() % 10 + 1;
+	enemySpeed = rand() % 20 + 1;
 	this->speed = enemySpeed;
 }
 void deathStar::SetShape(std::string shape){this->shape =shape;}

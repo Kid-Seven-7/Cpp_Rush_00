@@ -1,11 +1,11 @@
-#ifndef __DEATHSTAR_CLASS_HPP__
-#define __DEATHSTAR_CLASS_HPP__
+#ifndef __SCENERY_CLASS_HPP__
+#define __SCENERY_CLASS_HPP__
 
 // #include <cstdlib>
 // #include <string>
 // #include <ncurses.h>
 
-class deathStar {
+class scenery {
 	private:
 		/* Variable types
 			std::string;
@@ -16,7 +16,6 @@ class deathStar {
 			char;
 		*/
 		int col, row, size, speed;
-		std::string shape;
 
 	protected:
 
@@ -36,39 +35,33 @@ class deathStar {
 			int GetRow();
 			int GetSize();
 			int GetSpeed();
-			std::string GetShape();
 
 		//setters
 			void SetCol(int Col);
 			void SetRow(int Row);
 			void SetSize(int size);
 			void SetSpeed();
-			void SetShape(std::string shape);
 
 		//constructor(s)
 			//default
-			deathStar();
+			scenery();
 
 			//copy
-			// deathStar(const deathStar &[some_variable_name]);
+			// scenery(const scenery &[some_variable_name]);
 
 			//simple
-			// deathStar(int col,int row,int size,std::string shape);
-			deathStar(int col,int row);
+			// scenery(int col,int row,int size,std::string shape);
+			scenery(int col,int row);
 
 		//destructor
-			~deathStar();
+			~scenery();
 
 		//Member functions
 			// void SetAll([some_variable]...);
-			void mvUp();
-			void mvDown(int maxRow);
-			void mvLeft();
-			void mvRight(int maxCol);
 
 		//Overloads
 			//Assign Overload
-			deathStar & operator=(deathStar const & rhs);
+			scenery & operator=(scenery const & rhs);
 
 			//ToString Overload
 			void ToString(); //Handy override for displaying info

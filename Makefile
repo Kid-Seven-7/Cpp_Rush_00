@@ -5,10 +5,12 @@ SRCPATH = ./srcs/
 SRC = $(SRCPATH)main.cpp\
 			$(SRCPATH)ussEnterprise.class.cpp\
 			$(SRCPATH)deathStar.class.cpp\
+			$(SRCPATH)scenery.class.cpp\
 			$(SRCPATH)gameLogic.cpp\
 			$(SRCPATH)gamePlay.cpp\
 			$(SRCPATH)initGame.cpp\
-			$(SRCPATH)createEnemy.cpp
+			$(SRCPATH)createEnemy.cpp\
+			$(SRCPATH)createAstroid.cpp
 
 COMP = clang++
 

@@ -1,10 +1,9 @@
 # The first Rush of the C++ bootcamp
 
 > A retro style shoot 'em up'.
+>
 > A kin to Atari games, created using the ncurses library.
 >
-
-The code
 
 ## Installation
 
@@ -23,14 +22,14 @@ Not sure. Sorry
 
 ## Usage example
 
-After cloning and making type
+After cloning and making typing
 ``./ft_Retro``
-This will begin the game.
+will begin the game.
 
 ## Release History
 
-* 0.0.1
-    * we think code_ edition
+* ##### Version 0.0.1
+	* ######we think code_ edition
 
 ## Contributors
 
@@ -50,4 +49,4 @@ This will begin the game.
 
 ## Contributing
 
-Not open to contributing at present
+Open to contributing at present

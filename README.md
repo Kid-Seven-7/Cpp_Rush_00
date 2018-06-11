@@ -1,6 +1,8 @@
 # The first Rush of the C++ bootcamp
 
-> The first rush from the Piscine C++ pool.
+> A retro style shoot 'em up'.
+> A kin to Atari games, created using the ncurses library.
+>
 
 The code
 
@@ -9,24 +11,26 @@ The code
 iOS X & Linux:
 
 ```sh
-no Installation required
+git clone https://github.com/Kid-Seven-7/Cpp_Rush_00.git
+make all
 ```
 
 Windows:
 
 ```sh
-no Installation required
+Not sure. Sorry
 ```
 
 ## Usage example
 
-how to use
-``code snippet goes here``
+After cloning and making type
+``./ft_Retro``
+This will begin the game.
 
 ## Release History
 
 * 0.0.1
-    * Work in progress
+    * we think code_ edition
 
 ## Contributors
 

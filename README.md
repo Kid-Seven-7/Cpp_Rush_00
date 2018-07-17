@@ -1,6 +1,6 @@
 # The first Rush of the C++ bootcamp
 
-> A retro style shoot 'em up'.
+> A retro style 'shoot em up'.
 >
 > A kin to Atari games, created using the ncurses library.
 >
@@ -11,13 +11,14 @@ iOS X & Linux:
 
 ```sh
 git clone https://github.com/Kid-Seven-7/Cpp_Rush_00.git
-make all
+make
 ```
 
 Windows:
 
 ```sh
-Not sure. Sorry
+git clone https://github.com/Kid-Seven-7/Cpp_Rush_00.git
+make
 ```
 
 ## Usage example
@@ -28,8 +29,10 @@ will begin the game.
 
 ## Release History
 
-* ##### Version 0.0.1
-	* ######we think code_ edition
+* Version 0.0.2
+	* In progress
+* Version 0.0.1
+	* we think code_ edition
 
 ## Contributors
 

@@ -17,22 +17,18 @@ void ussEnterprise::ToString(){
 ussEnterprise::ussEnterprise(){
 	this->col=0;
 	this->row=0;
-	this->size=3;
-	this->shape="== ===== ";
 }
 
 int ussEnterprise::GetCol(){return this->col;}
 int ussEnterprise::GetRow(){return this->row;}
-int ussEnterprise::GetSize(){return this->size;}
+int ussEnterprise::GetScore(){return this->score;}
 bool ussEnterprise::GetCollision(){return this->collision;}
-std::string ussEnterprise::GetShape(){return this->shape;}
 
 //setters
 void ussEnterprise::SetCol(int Col){this->col =Col;}
 void ussEnterprise::SetRow(int Row){this->row =Row;}
-void ussEnterprise::SetSize(int size){this->size =size;}
+void ussEnterprise::SetScore(int score){this->score =score;}
 void ussEnterprise::SetCollision(bool collision){this->collision = collision;}
-void ussEnterprise::SetShape(std::string shape){this->shape =shape;}
 
 void ussEnterprise::mvUp(){
 	if (this->row > 2)

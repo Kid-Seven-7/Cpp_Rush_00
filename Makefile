@@ -7,10 +7,12 @@ SRC = $(SRCPATH)main.cpp\
 			$(SRCPATH)deathStar.class.cpp\
 			$(SRCPATH)scenery.class.cpp\
 			$(SRCPATH)stars.class.cpp\
+			$(SRCPATH)bullets.class.cpp\
 			$(SRCPATH)gameLogic.cpp\
 			$(SRCPATH)gamePlay.cpp\
 			$(SRCPATH)initGame.cpp\
-			$(SRCPATH)addObjects.cpp
+			$(SRCPATH)addObjects.cpp\
+			$(SRCPATH)gameOver.cpp
 
 COMP = clang++
 

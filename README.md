@@ -1,4 +1,6 @@
-# The first Rush of the C++ bootcamp
+# ft_Retro <img align="right" src="https://raw.githubusercontent.com/Kid-Seven-7/images/master/wtc.gif" width="75">
+
+###### the first rush of the C++ bootcamp at [we think code_](https://www.wethinkcode.co.za/)
 
 > A retro style 'shoot em up'.
 >
